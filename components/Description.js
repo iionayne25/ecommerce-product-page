@@ -4,7 +4,7 @@ const Description = () => {
   return (
     <>
       <div className="flex flex-col gap-3 text-left justify-start items-start px-3">
-        <p className="uppercase text-orange  text-[14px] ">sneaker company</p>
+        <p className="uppercase text-orange font-bold text-[14px] ">sneaker company</p>
         <h1 className="font-bold text-2xl">Fall Limited Edition Sneakers</h1>
         <p className="text-darkGrayishBlue  ">
           These low-profile sneakers are your perfect casual wear companion.

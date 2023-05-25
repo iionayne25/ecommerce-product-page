@@ -13,7 +13,7 @@ const SideBar = () => {
   return (
     <>
       {isOpen ? (
-          <div className={`sidebar z-10 ${isOpen ? "open" : ""}`}>
+          <div className={`sidebar z-20 ${isOpen ? "open" : ""}`}>
             <div className="h-full w-2/3 bg-white py-5 px-5 flex flex-col gap-10">
             <button className="" onClick={handleToggle}>
               <Image

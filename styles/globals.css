@@ -30,4 +30,13 @@ p {
   @apply left-auto right-[5px]
   }
 
+  .cart {
+  @apply bg-white mx-2 p-4 px-5 z-10  pb-6 flex flex-col gap-5 top-[70px] absolute left-0 right-0 rounded-lg
+  }
+  .cart .open{
+  @apply flex w-[375px]  }
+
+ .emptyCart{
+  @apply bg-white mx-2 p-4 px-5 z-10 pb-6 h-[260px] flex flex-col gap-5 top-[70px] absolute left-0 right-0 rounded-lg
+ }
 }
