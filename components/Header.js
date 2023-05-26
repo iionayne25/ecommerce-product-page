@@ -5,14 +5,14 @@ import Cart from "./Cart";
 const Header = ({ value, selectDelete }) => {
   return (
     <div className="flex justify-between bg-white items-center my-2 px-6 xl:px-0 xl:my-0 xl:h-20 xl:border-b xl:border-grayishBlue">
-      <div className="flex  items-center justify-center xl:h-full xl:gap-10">
-        <div className="flex gap-2 justify-center items-center">
+      <div className="flex h-full items-center justify-center xl:gap-10">
+        <div className="flex h-full gap-2 justify-center items-center">
           <div className="md:hidden w-fit">
             <SideBar />
           </div>
-          <p className="font-bold text-2xl">
-            sneakers
-          </p>
+            <p className="h-full flex justify-center items-center font-bold text-2xl">
+              sneakers
+            </p>
         </div>
         <div className="navbar-container">
           <p className="navbar-item">Collection</p>
@@ -20,7 +20,6 @@ const Header = ({ value, selectDelete }) => {
           <p className="navbar-item">Woman</p>
           <p className="navbar-item">About</p>
           <p className="navbar-item">Contact</p>
-          
         </div>
       </div>
       <div className="flex gap-4 items-center xl:gap-8">

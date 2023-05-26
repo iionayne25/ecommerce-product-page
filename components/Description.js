@@ -7,7 +7,7 @@ const Description = () => {
         <p className="uppercase text-orange font-bold text-[14px] ">
           sneaker company
         </p>
-        <h1 className="font-bold text-2xl xl:text-[48px]">Fall Limited Edition Sneakers</h1>
+        <h1 className="font-bold text-2xl xl:text-[48px] xl:leading-10">Fall Limited Edition Sneakers</h1>
         <p className="text-darkGrayishBlue xl:pt-4">
           These low-profile sneakers are your perfect casual wear companion.
           Featuring a durable rubber outer sole, they’ll withstand everything
