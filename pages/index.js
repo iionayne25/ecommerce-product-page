@@ -1,8 +1,4 @@
 import Head from "next/head";
-import Header from "@/components/Header";
-import Carousel from "@/components/Carousel";
-import Description from "@/components/Description";
-import Selector from "@/components/Selector";
 import ParentComponent from "@/components/ParentComponent";
 export default function Home() {
   return (
@@ -15,7 +11,7 @@ export default function Home() {
         />
         <link rel="icon" href="/images/favicon-32x32.png" />
       </Head>
-      <main className="flex min-h-screen flex-col  justify-start pb-4">
+      <main className="flex min-h-screen flex-col justify-center pb-14 xl:h-full xl:justify-start  xl:px-32">
       <ParentComponent/>
       </main>
     </div>

@@ -15,14 +15,18 @@ const ParentComponent = () => {
   const handleDelete =()=>{
    setSelectValue(0)
   }
-  console.log('setSelectValue:',selectValue)
   return (
     <>
       <Header value={selectValue} selectDelete={handleDelete}/>
-      <div className='flex flex-col gap-4'>
+      <div className='flex flex-col gap-4 xl:pt-14 xl:px-10 xl:flex-row xl:justify-center xl:items-center'>
+      <div className='xl:w-1/2 xl:flex xl:justify-center'>
       <Carousel />
+      </div>
+      <div className='flex flex-col justify-center items-center gap-4 xl:w-1/2'>
       <Description/>
       <Selector onValueChange ={handleValueChange}/>
+      </div>
+     
       </div>
      
     </>

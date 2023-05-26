@@ -11,6 +11,18 @@ p {
 }
 
 @layer components {
+
+
+  /*Header*/
+   .navbar-container{
+   @apply hidden xl:flex xl:gap-4 xl:h-full xl:justify-center xl:items-center 
+   }
+   .navbar-item{
+   @apply h-full text-darkGrayishBlue flex justify-center items-center cursor-pointer hover:text-varyDarkBlue hover:border-b-4 hover:border-orange
+   }
+  /*-----------------------*/
+
+  /*Side Bar*/
   .sidebar {
     @apply w-full h-full flex flex-col gap-10  fixed top-0 left-0 bg-black/75;
   }
@@ -20,23 +32,95 @@ p {
   .sidebarItem {
     @apply text-sm;
   }
+
+  /*-----------------------*/
+
+  /*Side Bar*/
+  /*-----------------------*/
+
+  /*Carousel*/
+  .arrow-container-left {
+    @apply flex justify-center items-center w-8 h-8 bg-white rounded-full absolute top-40 left-4 cursor-pointer md:hidden;
+  }
+  .arrow-container-right {
+    @apply flex justify-center items-center w-8 h-8 bg-white rounded-full absolute top-40 right-4 cursor-pointer md:hidden;
+  }
   .arrow {
     @apply w-28 h-28 absolute top-1/2 -translate-y-1/2 text-black cursor-pointer;
   }
-  .arrow-left{
-  @apply left-[5px]
+  .arrow-left {
+    @apply left-[5px];
   }
-  .arrow-right{
-  @apply left-auto right-[5px]
+  .arrow-right {
+    @apply left-auto right-[5px];
   }
 
+  .select-index{
+  @apply ring-2 ring-orange rounded-lg
+  }
+  .thumbnail{
+  @apply rounded-lg hover:opacity-40
+  }
+  .thumbnail-select{
+  @apply opacity-25
+  }
+  /*-----------------------*/
+
+  /*Cart*/
   .cart {
-  @apply bg-white mx-2 p-4 px-5 z-10  pb-6 flex flex-col gap-5 top-[70px] absolute left-0 right-0 rounded-lg
+    @apply bg-white mx-2 p-4 px-5 z-10  pb-6 flex flex-col gap-4 top-[70px] absolute left-0 right-0 rounded-lg
+    xl:bg-white xl:shadow-2xl xl:shadow-darkGrayishBlue/60 xl:w-72 xl:left-2/3 xl:top-[80px] xl:gap-3 xl:h-[225px];
   }
-  .cart .open{
-  @apply flex w-[375px]  }
+  .cart .open {
+    @apply flex w-[370px];
+  }
+  .emptyCart {
+    @apply bg-white mx-2 p-4 px-5 z-10 pb-6 h-[260px] flex flex-col gap-5 top-[70px] absolute left-0 right-0 rounded-lg
+    xl:bg-white xl:shadow-2xl xl:shadow-darkGrayishBlue/60 xl:w-72 xl:left-2/3 xl:top-[80px] xl:gap-3 xl:h-[225px];
+  }
+  .cart-label {
+    @apply bg-orange px-1.5 flex font-bold justify-center text-[9px] text-white rounded-xl
+          absolute top-3 right-12 xl:right-[235px] xl:top-7;
+  }
+  .checkout-btn {
+    @apply bg-orange w-full py-3 rounded-lg text-white text-xs font-bold;
+  }
+  .line {
+    @apply self-center w-[358px] h-1 text-grayishBlue;
+  }
 
- .emptyCart{
-  @apply bg-white mx-2 p-4 px-5 z-10 pb-6 h-[260px] flex flex-col gap-5 top-[70px] absolute left-0 right-0 rounded-lg
- }
+  .details-container {
+    @apply flex gap-2 justify-between items-center;
+  }
+
+  .empty-text {
+    @apply text-darkGrayishBlue font-bold text-sm;
+  }
+  /*-----------------------*/
+
+  /*Description*/
+  .description-container {
+    @apply flex flex-col gap-3 text-left justify-start items-start px-3 ;
+  }
+  .price-container {
+    @apply flex w-full justify-between items-center xl:py-2 xl:flex-col xl:items-start;
+  }
+  /*-----------------------*/
+}
+
+/*Selector*/
+.selector-container {
+  @apply bg-lightGrayishBlue w-full py-3 rounded-md flex justify-between items-center px-4 xl:w-2/5 xl:h-11;
+}
+.submit-btn-container {
+  @apply bg-orange flex justify-center py-3 rounded-lg shadow-2xl shadow-orange/50 xl:w-3/5 xl:h-11
+  hover:opacity-60 cursor-pointer;
+}
+.submit-btn {
+  @apply flex gap-3 text-sm font-bold items-center text-white;
+}
+/*-----------------------*/
+
+#cart svg:hover cart {
+ fill: #000;
 }
