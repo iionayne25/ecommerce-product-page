@@ -56,31 +56,31 @@ p {
   }
 
   .select-index{
-  @apply ring-2 ring-orange rounded-lg
+  @apply ring-2 ring-orange rounded-lg bg-white h-[80px] w-[80px]
   }
   .thumbnail{
-  @apply rounded-lg hover:opacity-40
+  @apply rounded-lg hover:opacity-40 hover:bg-white h-[80px] w-[80px]
   }
   .thumbnail-select{
-  @apply opacity-25
+  @apply opacity-25 bg-white   
   }
   /*-----------------------*/
 
   /*Cart*/
   .cart {
     @apply bg-white mx-2 p-4 px-5 z-10  pb-6 flex flex-col gap-4 top-[70px] absolute left-0 right-0 rounded-lg
-    xl:bg-white xl:shadow-2xl xl:shadow-darkGrayishBlue/60 xl:w-72 xl:left-2/3 xl:top-[80px] xl:gap-3 xl:h-[225px];
+    xl:bg-white xl:shadow-2xl xl:shadow-darkGrayishBlue/60 xl:w-72 xl:left-[985px] xl:top-[70px] xl:gap-3 xl:h-[225px];
   }
   .cart .open {
     @apply flex w-[370px];
   }
   .emptyCart {
     @apply bg-white mx-2 p-4 px-5 z-10 pb-6 h-[260px] flex flex-col gap-5 top-[70px] absolute left-0 right-0 rounded-lg
-    xl:bg-white xl:shadow-2xl xl:shadow-darkGrayishBlue/60 xl:w-72 xl:left-2/3 xl:top-[80px] xl:gap-3 xl:h-[225px];
+    xl:bg-white xl:shadow-2xl xl:shadow-darkGrayishBlue/60 xl:w-72 xl:left-[985px] xl:top-[70px] xl:gap-3 xl:h-[225px];
   }
   .cart-label {
     @apply bg-orange px-1.5 flex font-bold justify-center text-[9px] text-white rounded-xl
-          absolute top-3 right-12 xl:right-[235px] xl:top-7;
+          absolute top-3 right-12 xl:right-[255px] xl:top-7;
   }
   .checkout-btn {
     @apply bg-orange w-full py-3 rounded-lg text-white text-xs font-bold;
@@ -121,6 +121,4 @@ p {
 }
 /*-----------------------*/
 
-#cart svg:hover cart {
- fill: #000;
-}
+
