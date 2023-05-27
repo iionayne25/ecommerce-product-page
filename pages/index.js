@@ -11,7 +11,7 @@ export default function Home() {
         />
         <link rel="icon" href="/images/favicon-32x32.png" />
       </Head>
-      <main className="flex min-h-screen flex-col justify-center pb-14 xl:h-full xl:justify-start  xl:px-32">
+      <main className="flex min-h-screen flex-col justify-center pb-14 xl:h-full xl:justify-start xl:pb-0  xl:px-36  ">
       <ParentComponent/>
       </main>
     </div>
