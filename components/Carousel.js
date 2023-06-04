@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Image from "next/image";
 
 const Carousel = () => {
-
   const images = [
     "images/image-product-1.jpg",
     "images/image-product-2.jpg",
@@ -141,7 +140,7 @@ const Carousel = () => {
                   onClick={prevSlide}
                   onMouseEnter={() => handleMouseEnter("prev")}
                   onMouseLeave={handleMouseLeave}
-                  className=" rotate-180 arrow-container-left xl:flex xl:z-30 xl:left-[500px] xl:top-[300px] "
+                  className=" rotate-180 arrow-container-left xl:flex xl:z-30 xl:left-[500px] xl:top-[380px] "
                 >
                   <svg
                     width="13"
@@ -163,7 +162,7 @@ const Carousel = () => {
                   onClick={nextSlide}
                   onMouseEnter={() => handleMouseEnter("next")}
                   onMouseLeave={handleMouseLeave}
-                  className="arrow-container-right xl:flex xl:z-30 xl:right-[500px] xl:top-[300px]"
+                  className="arrow-container-right xl:flex xl:z-30 xl:right-[500px] xl:top-[380px]"
                 >
                   <svg
                     width="13"
