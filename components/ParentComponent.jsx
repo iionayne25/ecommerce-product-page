@@ -5,10 +5,9 @@ import Carousel from "./Carousel";
 import Header from "./Header";
 
 const ParentComponent = () => {
+  
   const [selectValue, setSelectValue] = useState(0);
   const [isDelete, setIsDelete] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
-  const [selectIndex, setSelectIndex] = useState(null);
 
   const handleValueChange = (value) => {
     setSelectValue(value);

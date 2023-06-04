@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import Image from "next/image";
 
 const Carousel = () => {
+
   const images = [
     "images/image-product-1.jpg",
     "images/image-product-2.jpg",
     "images/image-product-3.jpg",
     "images/image-product-4.jpg",
   ];
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -38,7 +40,6 @@ const Carousel = () => {
   const handleMouseEnter = (elementId) => {
     setHoveredElement(elementId);
   };
-
   const handleMouseLeave = () => {
     setHoveredElement(null);
   };
