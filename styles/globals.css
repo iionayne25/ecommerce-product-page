@@ -14,6 +14,9 @@ p {
 
 
   /*Header*/
+   .header-container{
+    @apply flex justify-between bg-white items-center my-2 px-6 xl:px-0 xl:my-0  xl:h-20 xl:border-b xl:border-grayishBlue/50
+   }
    .navbar-container{
    @apply hidden xl:flex xl:gap-4 xl:h-full xl:justify-center xl:items-center 
    }

@@ -4,7 +4,7 @@ import SideBar from "./SideBar";
 import Cart from "./Cart";
 const Header = ({ value, selectDelete }) => {
   return (
-    <div className="flex justify-between bg-white items-center my-2 px-6 xl:px-0 xl:my-0  xl:h-20 xl:border-b xl:border-grayishBlue/50">
+    <div className="header-container">
       <div className="flex h-full items-center justify-center xl:gap-10">
         <div className="flex h-full gap-2 justify-center items-center">
           <div className="md:hidden w-fit">
